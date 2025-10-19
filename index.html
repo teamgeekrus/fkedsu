@@ -545,9 +545,9 @@
             const totalCount = wikiData.length;
             
             if (visibleCount === totalCount) {
-                resultsInfo.textContent = `${totalCount} mods${totalCount > 1 ? 's' : ''} avaiable${totalCount > 1 ? 's' : ''}`;
+                resultsInfo.textContent = `${totalCount} chart${totalCount > 1 ? 's' : ''} avaiable${totalCount > 1 ? 's' : ''}`;
             } else {
-                resultsInfo.textContent = `${visibleCount} mods${visibleCount > 1 ? 's' : ''} avaiable${visibleCount > 1 ? 's' : ''} sur ${totalCount}`;
+                resultsInfo.textContent = `${visibleCount} chart${visibleCount > 1 ? 's' : ''} avaiable with actual filters${visibleCount > 1 ? 's' : ''} sur ${totalCount}`;
             }
         }
 
@@ -589,7 +589,7 @@
             
             const expandedContent = document.getElementById('expandedContent');
             const linksHtml = item.links.map(link => 
-                `<a href="${link.url}" target="_blank" class="link-btn">🔗 ${link.text}</a>`
+                `<a href="${link.url}" target="_blank" class="link-btn">${link.text}</a>`
             ).join('');
             
             expandedContent.innerHTML = `
