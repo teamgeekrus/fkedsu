@@ -545,9 +545,9 @@
             const totalCount = wikiData.length;
             
             if (visibleCount === totalCount) {
-                resultsInfo.textContent = `${totalCount} chart${totalCount > 1 ? 's' : ''} avaiable${totalCount > 1 ? 's' : ''}`;
+                resultsInfo.textContent = `${totalCount} chart${totalCount > 1 ? 's' : ''} avaiable`;
             } else {
-                resultsInfo.textContent = `${visibleCount} chart${visibleCount > 1 ? 's' : ''} avaiable with actual filters${visibleCount > 1 ? 's' : ''} sur ${totalCount}`;
+                resultsInfo.textContent = `${visibleCount} chart${visibleCount > 1 ? 's' : ''} found on ${totalCount} avaiable`;
             }
         }
 
